@@ -244,8 +244,8 @@ spec:
             value: "0"
           # - name: CYMBAL_BRANDING
           #   value: "true"
-          # - name: FRONTEND_MESSAGE
-          #   value: "Replace this with a message you want to display on all pages."
+          - name: FRONTEND_MESSAGE
+          value: "Welcome to Omni Store!."
           resources:
             requests:
               cpu: 100m
