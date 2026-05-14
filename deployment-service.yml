@@ -188,6 +188,7 @@ spec:
     port: 8080
     targetPort: 8080
 ---
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -242,16 +243,10 @@ spec:
             value: "checkoutservice:5050"
           - name: AD_SERVICE_ADDR
             value: "adservice:9555"
-          # # ENV_PLATFORM: One of: local, gcp, aws, azure, onprem, alibaba
-          # # When not set, defaults to "local" unless running in GKE, otherwies auto-sets to gcp
-          # - name: ENV_PLATFORM
-          #   value: "aws"
           - name: ENABLE_PROFILER
             value: "0"
-          # - name: CYMBAL_BRANDING
-          #   value: "true"
           - name: FRONTEND_MESSAGE
-          value: "Welcome to Omni Store!."
+            value: "Welcome to Omni Store!"
           resources:
             requests:
               cpu: 100m
