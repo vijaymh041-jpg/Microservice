@@ -8,7 +8,7 @@
                     sh "kubectl apply -f deployment-service.yml"
                 }
             }
-        }
+        } 
         
         stage('verify Deployment') {
             steps {
