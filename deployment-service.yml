@@ -110,7 +110,7 @@ spec:
           - name: ENABLE_PROFILER
             value: "0"
           - name: FRONTEND_MESSAGE
-            value: "Welcome to Omni Store!"
+            value: "Welcome to Kube Store!"
           resources:
             requests:
               cpu: 100m
