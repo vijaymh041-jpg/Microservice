@@ -90,7 +90,7 @@ public final class AdService {
      * @param responseObserver the stream observer which gets notified with the value of {@code
      *     AdResponse}
      */
-    @Override
+    @Override       
     public void getAds(AdRequest req, StreamObserver<AdResponse> responseObserver) {
       AdService service = AdService.getInstance();
       try {
